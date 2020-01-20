@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Bekary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Source+Sans+Pro:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overlock:700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <!-- Menubar -->
+        <div id="heading" style="background-image: url(images/banner.jpg);height: 100vh;background-repeat: no-repeat;background-size: cover">
+            <nav class="nav" style="margin: 0;padding: 0">
+                    <div class="container">
+                            <div class="logo">
+                                    <a href="#"><p>National Bakery</p></a>
+                                </div>
+                        <div id="mainListDiv" class="main_list">
+                            <ul class="navlinks">
+                                <li><a href="index.html" id="link" class="active">Home</a></li>
+                                <li><a href="menus.html">Menus</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <span class="navTrigger">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </span>
+                    </div>
+                </nav>
+                <script>
+                        $(window).scroll(function() {
+                            if ($(document).scrollTop() > 50) {
+                                $('.nav').addClass('affix');
+                                $('#logo').addClass('min');
+                                $('#link').removeClass('active');
+                                $(".nav div.main_list ul li a ").css("color","#5e3d28");
+                                $(".nav div.logo a ").css("color","black");
+                                console.log("OK");
+                            } else {
+                                $('.nav').removeClass('affix');
+                                $('#link').addClass('active');
+                                $('#link').removeClass('min');
+                                $('#logo').addClass('max');
+                                $(".nav div.main_list ul li a ").css("color","white");
+                                $(".nav div.logo a ").css("color","white");
+                            }
+                        });
+                    </script>
+
+          <center> <p id="heading-text">"Cooking is an art form, a creative thing."</p><br>
+            <a href="" id="heading-button">Contact Us</a></center> 
+        </div>
+
+<!-- banner1 -->
+<div id="who-are-we" style="padding-top: 7%;padding-bottom: 7%;background-image: url(images/background.jpg);background-size: cover;height: auto;">
+    <h1 id="paragraph-heading">Who Are We</h1>
+   <center> <p id="para1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+   </center>
+    <div class="row" style="width: 100%;margin: 0;padding: 0">
+
+    </div>
+</div>
+
+<!-- banner2 -->
+<div id="banner2" style="padding-bottom: 8%">
+    <div class="row" style="width: 100%;margin: 0;padding: 0">
+        <div class="col-lg-6" style="margin: 0;padding: 0">
+            <img src="images/p1.jpg" style="width: 100%;height:700px" alt="">
+        </div>
+        <div class="col-lg-6" style="margin: 0;padding: 0">
+                <div style="width: 100%;height:700px;background-color: #feb9c8">
+                <h1 id="banner2-head">Our Treats Are Handcrafted <br> With Love.</h1>
+                <p id="para2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<!-- Products -->
+<div id="products" style="margin-bottom: 5%">
+        <h1 id="paragraph-heading" style="color: #0a0650">Menus Categories</h1>
+   <center> <div class="row" style="width: 95%;margin: 0;padding: 0;margin-top: 4%">
+        <div class="col-lg-4" style="margin: 0;padding: 0">
+            <img src="images/bakery1.jpg" style="width: 100%;height:580px" alt="">
+            <a href="quote.html" id="button">Request A Quote</a>
+        </div>
+        <div class="col-lg-4" style="margin: 0;padding: 0">
+            <img src="images/bakery2.png" style="width: 100%;height:580px" alt="">
+            <a href="menus.html" id="button">View Menus</a>
+        </div>
+        <div class="col-lg-4" style="margin: 0;padding: 0">
+            <img src="images/bakery3.jpg" style="width: 100%;height:580px" alt="">
+            <a href="contact.html" id="button">Contact Us</a>
+        </div>
+            
+    </div></center>
+</div>
+
+
+<!-- dishes -->
+<div id="dish" style="margin-bottom: 5%">
+<h1 id="paragraph-heading" style="color: #0a0650">Our Dishes</h1>
+    <div class="row" style="width: 100%;margin: 0;padding: 0;margin-top: 4%">
+        <div class="col-lg-3">
+            <img id="dish-image" src="images/p2.jpg" style="width: 100%" alt="">
+            <br>
+            <h4 id="dish-heading">Heading Text</h4>
+            <p id="dish-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ipsam , quis deserunt quia sunt  dolorem officia consectetur. Incidunt ea doloribus! Voluptibuset ipsmlum necsitatibus, blanditiis nisi.   </p>
+            <a href="" id="dish-details">View More</a>
+        </div>
+
+        <div class="col-lg-3">
+            <img id="dish-image" src="images/p3.jpg" style="width: 100%" alt="">
+            <br>
+            <h4 id="dish-heading">Heading Text</h4>
+            <p id="dish-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ipsam , quis deserunt quia sunt  dolorem officia consectetur. Incidunt ea doloribus! Voluptibuset ipsmlum necsitatibus, blanditiis nisi.   </p>
+            <a href="" id="dish-details">View More</a>
+        </div>
+
+        <div class="col-lg-3">
+            <img id="dish-image" src="images/p4.jpg" style="width: 100%" alt="">
+            <br>
+            <h4 id="dish-heading">Heading Text</h4>
+            <p id="dish-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ipsam , quis deserunt quia sunt  dolorem officia consectetur. Incidunt ea doloribus! Voluptibuset ipsmlum necsitatibus, blanditiis nisi.   </p>
+            <a href="" id="dish-details">View More</a>
+        </div>
+
+        <div class="col-lg-3">
+            <img id="dish-image" src="images/p6.jpg" style="width: 100%" alt="">
+            <br>
+            <h4 id="dish-heading">Heading Text</h4>
+            <p id="dish-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ipsam , quis deserunt quia sunt  dolorem officia consectetur. Incidunt ea doloribus! Voluptibuset ipsmlum necsitatibus, blanditiis nisi.   </p>
+            <a href="" id="dish-details">View More</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- customize -->
+<div id="customize" style="margin-bottom: 5%;background-image: url(images/banner1.jpg);width: 100%;height:500px;background-size: cover">
+<h6 id="custom-text">Leave A Lasting <br> Impression With Fully</h6>
+<h4 id="custom-main">Custom Dishes</h4>
+<h6 id="custom-offer">With Discount Of 10%</h6><br>
+<a id="custom-button"  href="">Shop Now</a>
+</div>
+
+
+<!--  Instagram -->
+<div id="insta" style="margin-top: 2%;margin-bottom: 5%;">
+    <h1 id="paragraph-heading" style="color: #0a0650">Social Media</h1>
+    
+<center> <div id="new-portfolio" style="width:100%;height:auto;background-size:cover">
+  
+                                    <div class="button-group filters-button-group">
+                        
+                    <button class="button is-checked" style="border-radius: 0" data-filter=".fb">Facebook</button>
+                    <button class="button" style="border-radius: 0"  data-filter=".insta"> Instagram</button>
+                   
+    </div>
+            
+            <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
+                    <article class="fb">
+                                    <a class="thumbnail-classic" data-photo-swipe-item=""  target="_self"  data-size="1105x600" href="">
+                                    <img src="images/p4.jpg"  class="img-responsive" /></a>
+                    </article>
+                    <article class="insta">
+                            <a class="thumbnail-classic" target="_self" data-photo-swipe-item="" data-size="500x1150" href="">
+                            <img src="images/p3.jpg" class="img-responsive" /></a>
+                    </article>
+                   
+                    <article class="fb">
+                        <a class="thumbnail-classic" data-photo-swipe-item=""  target="_self"  data-size="1105x600" href="">
+                        <img src="images/p6.jpg" class="img-responsive" /></a>
+        </article>
+        <article class="fb">
+                <a class="thumbnail-classic" target="_self" data-photo-swipe-item="" data-size="500x1150" href="#">
+                <img src="images/p5.png" class="img-responsive" /></a>
+        </article>
+        <article class="insta">
+                <a class="thumbnail-classic" data-photo-swipe-item=""  target="_self"  data-size="1105x600" href="">
+                <img src="images/p5.png"  class="img-responsive" /></a>
+</article>
+<article class="fb">
+        <a class="thumbnail-classic" target="_self" data-photo-swipe-item="" data-size="500x1150" href="">
+        <img src="images/p6.jpg" class="img-responsive" /></a>
+</article>
+
+<article class="insta">
+    <a class="thumbnail-classic" data-photo-swipe-item=""  target="_self"  data-size="1105x600" href="">
+    <img src="images/p3.jpg" class="img-responsive" /></a>
+</article>
+<article class="fb">
+<a class="thumbnail-classic" target="_self" data-photo-swipe-item="" data-size="500x1150" href="#">
+<img src="images/p4.jpg" class="img-responsive" /></a>
+</article>
+
+       
+                
+                    
+            </section>
+            <br><br>
+</div></center>
+<script>
+            
+    $( function() {
+            var $grid = $('.grid').isotope({
+            itemSelector: 'article',
+            filter: '.fb'
+            });
+            
+            // filter buttons
+            $('.filters-button-group').on( 'click', 'button', function() {
+            var filterValue = $( this ).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+            });
+            $('.button-group').each( function( i, buttonGroup ) {
+            var $buttonGroup = $( buttonGroup );
+            $buttonGroup.on( 'click', 'button', function() {
+                $buttonGroup.find('.is-checked').removeClass('is-checked');
+                $( this ).addClass('is-checked');
+            });
+            });
+            });
+            
+            // debounce so filtering doesn't happen every millisecond
+            function debounce( fn, threshold ) {
+            var timeout;
+            return function debounced() {
+            if ( timeout ) {
+                clearTimeout( timeout );
+            }
+            function delayed() {
+                fn();
+                timeout = null;
+            }
+            timeout = setTimeout( delayed, threshold || 100 );
+            }
+            }
+            
+            $(window).bind("load", function() {
+            $('#all').click();
+            });
+            
+                    </script>
+
+
+</div>
+<!-- order -->
+<div id="order" style="background-image: url(images/banner2.jpg);width: 100%;height:200px;background-size: cover;margin-top:5%;padding: 0">
+<h4 id="order-head">Want To Place Order?</h4><br>
+<center> <a href="" id="order-button">Contact Us</a></center>
+</div>
+<div id="footer" style="background-color:#ffe0e3;height: 150px">
+   <h6 id="footer-text">National Bakery</h6>
+</div>
+    </div>
+    <script src="js/demo.js"></script>
+    <script src="js/fancybox.pack.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+</body>
+</html>
